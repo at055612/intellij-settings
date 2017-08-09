@@ -1,0 +1,82 @@
+<templateSet group="Stroom">
+  <template name="log" value="private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger($CLASS_NAME$.class);" description="SLF4J Logger" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="ll" value="private static final stroom.stats.util.logging.LambdaLogger LOGGER = stroom.stats.util.logging.LambdaLogger.getLogger($CLASS$.class);" description="LambdaLogger" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="rt" value="throw new RuntimeException(String.format(&quot;$STR$&quot;), e);" description="throw RuntimeException with String.format" toReformat="false" toShortenFQNames="true">
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="debug" value="LOGGER.debug(&quot;$STR$&quot;);" description="LOGGER.debug(&quot;&quot;);" toReformat="false" toShortenFQNames="true">
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="infol" value="LOGGER.info(() -&gt; String.format(&quot;$STR$&quot;,$ARG1$));" description="LOGGER.info(() -&gt; String.format(&quot;&quot;));" toReformat="false" toShortenFQNames="true">
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="debugl" value="LOGGER.debug(() -&gt; String.format(&quot;$STR$&quot;,$ARG1$));" description="LOGGER.debug(() -&gt; String.format(&quot;&quot;));" toReformat="false" toShortenFQNames="true">
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="pf" value="private final " description="private final" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="info" value="LOGGER.info(&quot;$STR$&quot;);" description="LOGGER.info(&quot;&quot;);" toReformat="false" toShortenFQNames="true">
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="error" value="LOGGER.error(&quot;$STR$&quot;,e);" description="LOGGER.error(&quot;&quot;);" toReformat="false" toShortenFQNames="true">
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="warn" value="LOGGER.warn(&quot;$STR$&quot;);" description="LOGGER.warn(&quot;&quot;);" toReformat="false" toShortenFQNames="true">
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="trace" value="LOGGER.trace(&quot;$STR$&quot;);" description="LOGGER.trace(&quot;&quot;);" toReformat="false" toShortenFQNames="true">
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tracel" value="LOGGER.trace(() -&gt; String.format(&quot;$STR$&quot;,$ARG1$));" description="LOGGER.trace(() -&gt; String.format(&quot;&quot;));" toReformat="false" toShortenFQNames="true">
+    <variable name="STR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="logl" value="private static final stroom.stats.util.logging.LambdaLogger LOGGER = stroom.stats.util.logging.LambdaLogger.getLogger($CLASS_NAME$.class);" description="SLF4J LambdaLogger" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
